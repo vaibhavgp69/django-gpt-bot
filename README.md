@@ -1,5 +1,7 @@
 # django-gpt-bot
-a chatbot webpage using openai api
+-->A Chatbot webpage using openai api
+
+-->Fully functional chat-gpt-3.5-turbo api
 
 1. download the zip file
 2. extract it 
