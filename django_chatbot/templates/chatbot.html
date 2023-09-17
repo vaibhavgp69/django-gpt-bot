@@ -89,6 +89,11 @@
       margin: 10px 10px 10px 20px;
     
   }
+  .r1 {
+      
+    margin: 10px 10px 10px 20px;
+  
+}
   </style>
 {% endblock %}
 
@@ -100,8 +105,7 @@
     {% if user.is_authenticated %}
     <div class="card-header bg-primary text-white "> Welcome to Chat  {{user.username}}<a class = "rightside" style  = "color:white" href="delete">Delete Chat</a> <a class = "rightside2" style  = "color:white" href="logout">Logout</a></div>
     {% else %}
-    <div class="card-header bg-primary text-white ">Chat  </div>
-    <div class="card-header bg-primary text-white"><a  style  = "color:white" href="login">Login</a>  <a style  = "color:white" href="register">Register</a></div>
+    <div class="card-header bg-primary text-white ">Chat <a  class = 'r1' style  = "color:white" href="login">Login</a>  <a class = 'r1' style  = "color:white" href="register">Register</a><a class = "rightside" style  = "color:white" href="delete">Delete Chat</a>  </div>
     {% endif %}
    
     <div class="card-body messages-box">

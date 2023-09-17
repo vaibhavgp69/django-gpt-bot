@@ -9,7 +9,7 @@ from django.utils import timezone
 # Create your views here.
 
 
-openai_api_key = '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'
+openai_api_key = 'ENTER YOUR SECRET API KEY FROM OPEN AI HERE '
 openai.api_key = openai_api_key
 content = """
         Answer as a assistant 
@@ -91,8 +91,9 @@ def logout(request):
     return redirect('login')
 
 def delete(request):
-    chats = Chat.objects.filter(user=request.user)
-    chats.delete()
+    if request.user.is_authenticated:
+        chats = Chat.objects.filter(user=request.user)
+        chats.delete()
     return redirect('chatbot')
     
     
