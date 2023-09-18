@@ -9,4 +9,4 @@
 4. Register first with openai APIkey or if anonymous browsing follow 5
 5. Make sure to enter your openAI API key in views.py file under chatbot folder
 6. run the below command
-7. python manage.py runserver , copy paste the local host url and see the project in action
+7. python manage.py runserver , copy paste the local host url (http://127.0.0.1:8000) and see the project in action
