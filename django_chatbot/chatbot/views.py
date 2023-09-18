@@ -35,7 +35,7 @@ def ask_openai(message):
         return reply
     except:
         reply = """
-        Please enter your OPENAI API KEY in views.py file under chatbot folder to work
+        Please enter your OPENAI API KEY in views.py file under chatbot folder or REGISTER
         ,   To find your API key : ask vaibhav or go to ur openai account and create one temporarily
         """
         return reply
