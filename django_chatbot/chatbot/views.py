@@ -9,7 +9,7 @@ from django.utils import timezone
 # Create your views here.
 
 
-openai_api_key = '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'
+openai_api_key = 'Enter Your Api key'
 openai.api_key = openai_api_key
 content = """
         Answer as a assistant 
